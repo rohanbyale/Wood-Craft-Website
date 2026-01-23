@@ -1,0 +1,57 @@
+
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap'); */
+
+@font-face {
+    font-family: one;
+    src: url(/68805858e095a766b86eb9f6_SuisseIntl-SemiBold-WebM.ttf);
+}
+@font-face {
+    font-family: two;
+    src: url(/6882e67a90d89df1a9887176_SuisseIntl-Medium-WebM.ttf);
+}
+
+@font-face {
+    font-family: three;
+    src: url(/6892c333bf67b1d5eafe58a0_Obviously-CondensedBlack.ttf);
+}
+
+.one{
+    font-family: one;
+}
+
+.three{
+    font-family: three;
+}
+
+.two{
+    font-family: two;
+}
+.no-anim * {
+  animation: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+
+ 
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #1B2620; /* Your Deep Forest Green */
+  color: #C29958;            /* Your Signature Gold */
+}
